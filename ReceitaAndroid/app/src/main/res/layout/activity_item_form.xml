@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="meira.ricardo.br.receitaandroid.activities.ItemsActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nome:" />
+
+    <EditText
+        android:id="@+id/item_name"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tipo:" />
+
+    <EditText
+        android:id="@+id/item_type"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tipo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Valor:" />
+
+    <EditText
+        android:id="@+id/item_value"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Valor"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_gravity="center"
+        android:layout_width="140sp"
+        android:layout_height="25sp"
+        android:layout_weight="1"
+        android:text="ENVIAR" />
+</LinearLayout>

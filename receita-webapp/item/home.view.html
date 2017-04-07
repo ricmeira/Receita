@@ -1,0 +1,11 @@
+<div>
+	<h3>Item</h3>
+	<ul>
+		<li ng-repeat="item in items"> 
+			<a ui-sref="itemDetail({ itemId: item.id })">
+        		{{item.name}}
+        	</a>
+		</li> 
+	</ul>
+	<button ui-sref="itemAdd({ userId: userId })">Adicionar Item</button>
+</div>

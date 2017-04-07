@@ -1,0 +1,47 @@
+<div >
+	<form ng-submit="submitRegistration(registrationForm)" role="form" ng-init="registrationForm = {}">
+		<div>
+			<label>Nome:</label><br>
+			<input type="text" name="name" ng-model="registrationForm.name" required="required""/>
+		</div>
+
+		<div>
+			<label>Email:</label><br>
+			<input type="email" name="email" ng-model="registrationForm.email" required="required" />
+		</div>
+
+		<div>
+			<label>Senha:</label><br>
+			<input type="password" name="password" ng-model="registrationForm.password" required="required" />
+		</div>
+
+		<div>
+			<label>Confirme sua senha:</label><br>
+			<input type="password" name="password_confirmation" ng-model="registrationForm.password_confirmation" required="required" />
+		</div>
+
+		<div>
+			<label>Cidade:</label><br>
+			<input type="text" name="city" ng-model="registrationForm.city" required="required"/>
+		</div>
+
+		<div>
+			<label>Endereço:</label><br>
+			<input type="text" name="address" ng-model="registrationForm.address" required="required""/>
+		</div>
+
+		<div>
+			<label>Idade:</label><br>
+			<input type="number" min="1" step="1" name="age" ng-model="registrationForm.age" required="required""/>
+		</div>
+
+		<div>
+			<label>Sexo:</label><br>
+			<input type="radio" name="sex" ng-model="registrationForm.sex"  value="masc"/>
+			Masculino
+			<input type="radio" name="sex" ng-model="registrationForm.sex"  value="fem" />
+			Feminino
+		</div>
+		<button type="submit">Cadastrar</button>
+	</form>
+</div>

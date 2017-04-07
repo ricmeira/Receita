@@ -1,0 +1,21 @@
+<div>
+	<form ng-submit="submitForm(form)" role="form" ng-init="form = {}">
+		<div>
+			<label>Nome:</label><br>
+			<input type="text" name="name" ng-model="form.name" required="required" />
+		</div>
+
+		<div >
+			<label>Tipo:</label><br>
+			<input type="text" name="type" ng-model="form.itemType" required="required" />
+		</div>
+
+		<div >
+			<label>Value:</label><br>
+			<input type="number" name="type" ng-model="form.value" required="required" />
+		</div>
+
+		<button type="submit">Criar</button><br>
+
+	</form>
+</div>

@@ -1,0 +1,18 @@
+<div>
+	<form ng-submit="submitLogin(loginForm)" role="form" ng-init="loginForm = {}">
+		<div>
+			<label>Email:</label><br>
+			<input type="email" name="email" ng-model="loginForm.email" required="required" />
+		</div>
+
+		<div >
+			<label>Senha:</label><br>
+			<input type="password" name="password" ng-model="loginForm.password" required="required" />
+		</div>
+
+		<button type="submit">Login</button><br>
+
+		Não possui conta?
+		<a ui-sref="register" ui-sref-active="active">Registre-se</a>
+	</form>
+</div>
